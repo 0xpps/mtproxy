@@ -179,7 +179,7 @@ config_mtp(){
    # config info
   public_ip=$(curl -s https://api.ip.sb/ip --ipv4)
   [ -z "$public_ip" ] && public_ip=$(curl -s ipinfo.io/ip --ipv4)
-  secret=$(head -c 16 /dev/urandom | xxd -ps)
+  secret="1e6c5026909a4f68b6e250b9037fa45f"
 
   # proxy tag
   while true
